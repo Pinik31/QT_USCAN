@@ -1,0 +1,25 @@
+﻿Update Log:
+------------------------------------------------------------------------------------------
+Initial Version (updates prior to 1/1/2021 are unknown)
+------------------------------------------------------------------------------------------
+
+
+-------------VERSION 2021.3.0.1 ---------------------------------------------------------------
+1. Dataaccess Changes
+	- Many classes had had connection strings embeded in them.  All the same.  Moving this so a single connection string, where possible
+	  covers this need.  Increases security and ease of configuration
+2. UI Changes
+	- Main window can now be resized
+	- Password/Login box now recenters automatically
+	- Password/Login box has proper TAB order to aid in login speed using keyboard
+3. General Code Changes
+	- Removed a TON of commented garbage code (see RemovedCode-SDV.txt)
+	- Updated method and function calls to use .NET 4.5 standards instead of calls that were flagging as depreciated
+	- Added comments to various functions including the MS standard "///" blocks so calling code members would be easier
+
+
+	------------------------------------------------------
+	UPDATE 2022.2.8
+	------------------------------------------------------
+	1) When doing a margin update the file location was hard coded in frmQuoteVerification.  Removed the reference to the \\172.20.1.66\ and
+		instead used the dbcommon variable.

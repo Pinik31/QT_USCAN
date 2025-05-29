@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="QuoteOffline.exe" version="2021.8.0.2" publicKeyToken="3a1736397a4958b6" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="QuoteOffline" version="2021.8.0.1" publicKeyToken="3A1736397A4958B6" language="neutral" processorArchitecture="x86" />
+    <commandLine file="QuoteOffline.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxShockwaveFlashObjects.dll" size="18432">
+      <assemblyIdentity name="AxShockwaveFlashObjects" version="1.0.0.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6VFGhQbgA3aeudVZktXkQw4ylnPGyK6IF8Q1yNCbuR4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.CrystalReports.Engine.dll" size="373248">
+      <assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tHpwbNdNJulQmHukQfFHxiFoUU3toXn0YXK6UgwqXic=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.ClientDoc.dll" size="55296">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.ClientDoc" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fajBL/j/SDiTeqDPL08n1of97ouSlLLy+MjJvUiFffk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.CommLayer.dll" size="37376">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.CommLayer" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1XWbYMwPODWDZzYQO9CfngtxY61Cbz7gMGmFbLVxSI0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.CommonControls.dll" size="124416">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.CommonControls" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>b2swbefxs3LMgk2CXclmVEibfxslzZsHL02myfk9RV8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.CommonObjectModel.dll" size="25600">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.CommonObjectModel" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QuWhWZbeOLCumj5S4grXmF8GIsZ3Wulfwo9G/UlZuqU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.Controllers.dll" size="165376">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.Controllers" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>penfuqy9rgoEamJgzwd5jFHCTqp6qeYlW9zz2zTun9Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.CubeDefModel.dll" size="26112">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.CubeDefModel" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oKDwy8e0Vc3JnD2hC0ngqtjt44AC83A7RNGZCGE6BYo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.DataDefModel.dll" size="249344">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vQ4XJ/1Qyfafg7XkrPDnKl/uCJJN4rtbUTwuv4G1xO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.DataSetConversion.dll" size="44544">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataSetConversion" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QbENioY6PIOyqx60DT6IDIpvFLIDYG3hgEZ2lM7MXik=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.ObjectFactory.dll" size="5120">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.ObjectFactory" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tU0aWm8mXlLgKQIpqduIiYi4Rh6fhiutmwQduuscgI8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.Prompting.dll" size="142336">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.Prompting" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ITJyW6SZgxV/24gKV1PK78gRYZBJJIVi3INOItITONw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.ReportDefModel.dll" size="359424">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3TJ/L93dWtF7Oglm0OHsLEjBV/JIG7prA8riFo5zz8s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportAppServer.XmlSerialize.dll" size="16384">
+      <assemblyIdentity name="CrystalDecisions.ReportAppServer.XmlSerialize" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NdivNYWwPkVx22nJmDvvbpZ4GU5Yqzd9VZJVR7EsK/w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.ReportSource.dll" size="74752">
+      <assemblyIdentity name="CrystalDecisions.ReportSource" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>t6gty9oAM4N54un5e/RVL7ZB9VIbd1lIsQpMhTvj2iE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.Shared.dll" size="879104">
+      <assemblyIdentity name="CrystalDecisions.Shared" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>El0PSNhU8Ou7NADDVXXcr4R2C3k/DalqOs1bCkZCW8M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrystalDecisions.Windows.Forms.dll" size="541696">
+      <assemblyIdentity name="CrystalDecisions.Windows.Forms" version="13.0.4000.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TNdTzXnzzzVlpPgSe63fBS4lU06gOPcXvunC2MfYFKU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="192512">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="0.85.5.452" publicKeyToken="1B03E6ACF1164F73" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z8KoOFaaSNFqFSabtwHeh7gbPSvDA7t8TDckzDu6DFA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.Microsoft.Office.Core.dll" size="442368">
+      <assemblyIdentity name="Interop.Microsoft.Office.Core" version="2.8.0.0" publicKeyToken="3A1736397A4958B6" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3GlTNoaOyMXM8lQzRNpUXMkm1BG8o4gvct/0Yb2QPhs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="3694592">
+      <assemblyIdentity name="itextsharp" version="4.1.6.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>C9/Ek/KXXYCYYVuIJvAUlLFNLiYFuC0KVYD5PxmEBpM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MergePDFNisha.dll" size="6656">
+      <assemblyIdentity name="MergePDFNisha" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OgQx7H3rBrfjS4ZEB7VH7pv2WJLPF1xnsO+B+ECTIRE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Interop.Excel.dll" size="1279864">
+      <assemblyIdentity name="Microsoft.Office.Interop.Excel" version="12.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nYUVJ/53dNsLPllolFZZwdKBo7sO65sBcvIXda/STw8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Oracle.DataAccess.dll" size="1015808">
+      <assemblyIdentity name="Oracle.DataAccess" version="2.112.1.0" publicKeyToken="89B483F429C47342" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WwJZnCMYVRd15JwRtzwRxchDLZcSpyvo/aRxlHgpJLg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuoteOffline.exe" size="966920">
+      <assemblyIdentity name="QuoteOffline" version="2021.8.0.1" publicKeyToken="3A1736397A4958B6" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uXzf/z/sS1mu0tWK53Q1ZC7xLY6A8aha0sEl4CUjMP8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShockwaveFlashObjects.dll" size="23040">
+      <assemblyIdentity name="ShockwaveFlashObjects" version="1.0.0.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bGw6Q5/GiNdtnrd3v3WRoAFR/WsLf72EqlgqXHTijhw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="25464">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>w+WKWN8hrnAPMBVWrF/2DJ15GS7h6GEY4Dbbbs02KsQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="logo.ico" size="5182">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l+/108Uy5CVFkJlsi+uaK9zJakTLExCH1zqWmuAR1GM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="QuoteOffline.exe.config" size="1565">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zfqoNg65fmfDWVM/NHjraubjRqZYNObvCkLbE/BAEjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UpdateLog.txt" size="1093">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z+36Pc//PXKKeKT5x1IlP5PfZFp9y8U3AzECvHwQ564=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Scott Vandeslunt, OU=Resuscitation, OU=Employees, OU=People, DC=zollmed, DC=com" issuerKeyHash="44a31550d34968336a84700d4f376b8dc5e56689" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3YMOCXJkNRtcX6/s3lH3mey07A072STbZPdmmuMcpFI=</DigestValue></Reference></SignedInfo><SignatureValue>zLmB6k+tP5+IMJBFcNXR6dO+6vf4XjoM+61y2WYipCfbQHo9BnXoL9oMxXPROt/9/D3qIqywLUy2gFQrsqyn9tdL8dkESGsVWIH5k4TCMFoRd2kZxCU42QuDLGtZqQQU1jjjnCkrseS1z6LVvTMYfdHznLT7CvvD/5vSNe8P5f5FkAjlvdjWbOApRBaUuT0WQHnB+6jgd/qkowcNHgFtNW8sfZR/ZZ6xr2jD77jBdeGdaNai1JEXcBprIVEpm5GyS7kfik2+1y34Hn4HE6frwWjzvyk1Yykk7lUlEqn6vLrGmHPGo2N1gPtgUYEpoG6femKyFvDDO6l9/F0Bg9NhkQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7WM2gGqrX8KoVl/tqCt0TA0sd2GXPzTdX4UaoILc9dCwe6h09pexxx22tz8E5TQ5VMEXbDkMfuSUy/q140XleLum+ix9nycaDCvpCvVpE2ckADwZ0lxLkFJuq0eNCknSXgckpDFJwziBk44La9+3EGJB49zdk7kIA3+ZIMkzAHPOtHg8C4rut54SZK7c3JPbB7yDkUOlhsbEwDgLpAk/OE5xdQVOJ3rX+Zz2bn4SY8ygOCHQF7ns0Us6kNnzNaGNn+wP33RHkBz6pGu/+QX5a5U7bgGlZG6iajOTujoBCGPYnoJBtWT/X/uyvpegKtjxJ6Bo3D6HEY9LXwclEPMtzQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="52a41ce39a66f764db24d93b0decb4ec99f751deecaf5f5c1b356472090e83dd" Description="" Url=""><as:assemblyIdentity name="QuoteOffline.exe" version="2021.8.0.2" publicKeyToken="3a1736397a4958b6" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Scott Vandeslunt, OU=Resuscitation, OU=Employees, OU=People, DC=zollmed, DC=com</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>llvxn+6JwfOoTdj5IgmcNfZBNx5y8ISNy1wVJfrcfwY=</DigestValue></Reference></SignedInfo><SignatureValue>dsJXWUWOxfG2tW/QLqmcZ0sodNbMycQg5SQnBmrxtu+OayIX8NhYpjWxUWiSMzuKGT1nnPLyg1qx3yXaH/gIxpYI132JL6Wb5JutbG69JOcQqeKyk5WlG8DDLpfdjqyPKvytwyNtLYyqJ/AwmYdydGRpZvSs29IiXo80psKM6TEMBwTqd8s4PmTB2SrBtc3p4Aj32DltY6QvcX4Fi6bK4iSjwKCsNW86q5pLEqVtLKuwLwNE7XzjlwmaejO8Anxb2WaCzH4E7Q6e0Nml5ZOBlBl3nYufm/oQn/s+QGGPPucz1YiO6dDpxxMmzlkPc6ar6LbdPvAijlC9ihMJXrqW4g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7WM2gGqrX8KoVl/tqCt0TA0sd2GXPzTdX4UaoILc9dCwe6h09pexxx22tz8E5TQ5VMEXbDkMfuSUy/q140XleLum+ix9nycaDCvpCvVpE2ckADwZ0lxLkFJuq0eNCknSXgckpDFJwziBk44La9+3EGJB49zdk7kIA3+ZIMkzAHPOtHg8C4rut54SZK7c3JPbB7yDkUOlhsbEwDgLpAk/OE5xdQVOJ3rX+Zz2bn4SY8ygOCHQF7ns0Us6kNnzNaGNn+wP33RHkBz6pGu/+QX5a5U7bgGlZG6iajOTujoBCGPYnoJBtWT/X/uyvpegKtjxJ6Bo3D6HEY9LXwclEPMtzQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>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</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
